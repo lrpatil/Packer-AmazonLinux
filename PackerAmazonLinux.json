@@ -3,7 +3,7 @@
 			"aws_source_ami": "ami-0b99c7725b9484f9e",
 			"aws_vpc_id": "vpc-08c83cb91360c7490",
 			"aws_subnet_id": "subnet-0844ab456719c93bd",
-			"aws_kms_key_id":"2cd29851-a961-4649-9bb0-b68e250e92b9",
+			"aws_kms_key_id":"80ad0982-7461-4094-8c6c-17269a01d8b3",
 			"ec2_instance_type": "t2.micro",
 			"output_ami_name": "AmazonLinux-Golden-AMI"
 		},
@@ -29,7 +29,7 @@
 			"tags": {
 				"Name": "AmazonLinux-Golden-AMI",
 				"BuiltBy": "Packer",
-				"PackagesIncluded": "SSM|Python|AWSCLI"
+				"PackagesIncluded": "CWAgent|Python|AWSCLI"
 			}
 		}],
 		"description": "AWS image",
