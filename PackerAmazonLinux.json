@@ -53,6 +53,13 @@
 				"scripts": [
 					"scripts/InstallAWSCLI.sh"
 				]
+			},
+			{
+				"type": "shell",
+				"execute_command": "echo 'packer' | sudo -S env {{ .Vars }} {{ .Path }}",
+				"scripts": [
+					"scripts/InstallCloudwatchAgent.sh"
+				]
 			}
 		]
 	}
